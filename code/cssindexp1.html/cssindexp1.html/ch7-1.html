@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        header{
+            inline-size: none;
+            background-color: black;
+            color: white;
+            
+        }
+        ul{
+           
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+        }
+        ul li{
+            list-style: none;
+            margin: 12px 15px 12px 15px;
+        }
+        .container{
+            background-color: brown;
+            height: 44vh;
+            color: rgb(18, 18, 18);
+        }
+        @media screen and (max-width:600px){
+            body {
+            background-color: red ;
+        }
+        @media  screen and (max-width:500px) {
+            body{
+                background-color: green;
+            }
+        }
+        .container{
+            background-color: yellow;
+            color: blue;
+        }
+    }
+    @media  screen and (max-width:500px) {
+            header{
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Name</li>
+            <li>Team</li>
+        </ul>
+        
+            
+        
+    </header>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error adipisci beatae accusantium veniam maiores harum expedita, asperiores sapiente rem officia neque voluptas vitae.
+    </div>
+</body>
+</html>
