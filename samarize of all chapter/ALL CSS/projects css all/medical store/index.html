@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical store</title>
+    <link rel="stylesheet" href="style .css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- header navbar -->
+     <header>
+        <div class="navbar">
+            <h1 class="logo">MediCare</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Medicines</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+     <!-- Hero section  -->
+      <section class="hero">
+        <h2 class="animate-welcome">Welcome to our website</h2>
+        <h3 class="animate-store">Your trusted Medical store</h3>
+        <button class="hero-btn">contact us</button>
+      </section>
+<!-- slider  -->
+ <section class="slider">
+    <h2>Featured Products</h2>
+    <div class="slider-container">
+        <img src="syedrop.jpg.jpeg" alt="Medicine 1">
+        <img src="asprin3.jpg" alt="Medicine 2">
+        <img src="iburofun.jpg" alt="Medicine 3">
+        <img src="panadol.jpg" alt="Medicine 4">
+        <img src="asprin3.jpg" alt="Medicine 5">
+        <img src="ibu2.jpg" alt="Medicine 6">
+        <img src="th (1).jpg" alt="Medicine 7">
+        <img src="chough.jfif" alt="Medicine 8">
+        <img src="iburfon4.jpeg" alt="Medicine 9">
+        <img src="syedrop.jpg.jpeg" alt="Medicine 10">
+        <img src="ibu2.jpg" alt="Medicine 11">
+        <img src="th (1).jpg" alt="Medicine 12">
+        <img src="panadol.jpg" alt="Medicine 13">
+        <img src="iburofun.jpg" alt="Medicine 14">
+        <img src="syedrop.jpg.jpeg" alt="Medicine 15">
+    </div>
+ </section>
+ <!-- search  -->
+  <section class="search-section">
+    <h2>search for medicine </h2>
+    <div class="seach-wrapper"> 
+  <span class="search-icon"> <i class="fas fa-search"></i>
+   
+  </span>
+  <div class="search">
+    <input type="text" name="" id="search input" placeholder="search . . . . " &#128269
+    >
+    <span class="search icon">&#128269</span>
+    <span class="search icon">&#128267</span>
+  </div>
+    <input type="text" id="search input" placeholder="type medicine name" onkeyup="fliterMedicine()" 
+   >
+    <span class="clear-icon" id="clearicon" onclick="clearsearch"></span>
+    </div>
+ 
+  </section>
+
+      <!-- Medicine Section  -->
+<section class="medicine-section">
+    <h2>Our Medicine</h2>
+    <div class="medicine-container">
+        <div class="medicine-card">
+            <h3>Paracetamol</h3>
+            <p>fever & Pain Relife</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>ibuprofen</h3>
+            <p>Aniti-inflammatory</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>Antibiotic</h3>
+            <p>Bacterial Infections</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>Amoxicillin</h3>
+            <p>Antibiotic</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>Cetrizine</h3>
+            <p>Allergy Relief</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>Aspirin</h3>
+            <p>Pain Relief</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>Fresh eye drop</h3>
+            <p>Dry Eye Relief</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>cough Syurp</h3>
+            <p>soothe sore throat</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>vitamin D Capsule</h3>
+            <p>immune Booster</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="medicine-card">
+            <h3>infant Drops</h3>
+            <p>Baby stomach Relief</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</section>
+<!-- footer  -->
+ <footer>
+ <div class="footer">
+ <div class="footer-contant">
+    <p>&copy;2025 Medicare. All rightd reserved</p>
+    <div class="footer-links">
+        <a href="#"> Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Support</a>
+    </div>
+</div>
+</footer>
+<!-- script  -->
+ <!-- <script>
+    function fliterMedicine(){
+        const input=document.getElementById(\"searchinput\").value.toLowerCase();
+        const Medicines=document.querySelectorAll(\"medicine-item\");
+        Medicines.forEach(item=>{
+            const name = item.querySelector(\"h3\").textContent.toLowerCase();
+            item.style.display=name.includes(input)?\"block\":\"none\"
+        });
+    }
+ </script> -->
+ <script>
+    const medicine = ["paracetamol", "ibuprofen","antibiotic","antiviral","EyeDrops","Syrup","Capsules","Baby Medicine"];
+    function filterMedicine() {
+        const input =document.getElementById('searchinput').value.toLowerCase();
+        const LIST = getElementById('SuggestionsLists'); 
+        // LIST.innerHTML= if ("input===")return;
+         const filtered=Medicines.filter.forEach(med=>{
+            const li=document.createElement('li');
+            litextcontent=med;
+            li.onclick=()=>{
+                document.detElementByid('searchinput').value=med;
+                list.innerHTML=";"
+            };
+            list.appendChild(li);
+         });
+        
+        // const clearicon=document.getElementById("clearicon");
+        // clearicon.style.display=input.value?"block":"none";
+    }
+    function clearsearch(){
+        document.getElementById("searchinput").value="";
+        fliterMedicine();
+    }
+ </script>
+</body>
+</html>

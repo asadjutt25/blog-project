@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Special+Gothic+Expanded+One&family=Ultra&display=swap');
+:root {
+    --main-bg-color: #2874f0;
+  }
+*{
+    padding: 0;
+    margin: 0; 
+}
+header{
+    background-color: var(--main-bg-color);
+    color: white;
+  
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+}
+nav ul{
+    /* height: 20px; */
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+  
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+  
+}
+nav ul li a:hover{
+
+color: aqua;
+font-weight: bold;
+
+}
+.search button{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}
+
+.search{
+  
+display: flex;
+align-items: center;
+}
+.search input{
+    width: 25vw;
+    height: 27px;
+    border-radius: 5px;
+margin: 0 16px 0 56px;
+padding: 0 12px;
+}
+.container{
+    min-height:calc( 100vh - 58px - 7vh);
+}
+
+.slider{
+    margin: 10vh 40vh;
+    width: 80vw;
+    margin: 12px auto;
+    overflow: scroll;
+  
+}
+.cards{
+    animation: widthAnimation 3s ease-in-out 1s 3 alternate-reverse;
+    background-color:rgb(18, 17, 17);
+    color: white;
+    height: 70vh;
+    /* width: 34vw; */
+    display: flex;
+    flex-direction: row;
+ justify-content: center;
+ /* margin: 10vh 40vh; */
+ width: 100vw;
+ /* margin: 12px; */
+ overflow: scroll;
+}
+@keyframes scroll{0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(-50%);
+}
+}
+   
+.card-item{
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+    /* margin: 10vh 40vh; */
+    /* width: 80vw; */
+    /* margin: 12px auto; */
+    /* overflow: scroll; */
+    
+}
+.card-item{
+    display: flex;
+    width: calc(250px*8);
+    animation: scroll 5s linear infinite;
+}
+.pic1{
+    /* width: 22vw; */
+    height: 40vh;
+flex-direction: row;
+object-fit: cover;
+cursor: all-scroll;
+object-fit: cover;
+}
+.card{
+    
+    width:91vw;
+    margin: auto;
+    font-family:  "Lato", sans-serif; ;
+justify-content: center;
+width: 30vw;
+flex-direction: row;
+}
+.card h2{
+    font-family: "Lato", sans-serif;
+    
+}
+footer{
+    background-color:var(--main-bg-color);
+    height: 7vh;
+    color: white;
+    font-family: "Lato", sans-serif;
+}

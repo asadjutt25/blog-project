@@ -1,0 +1,118 @@
+/* body{
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#container{
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction:  row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+     /* align-content: flex-start; */
+/* }  */
+/* #box1{
+    background-color: aqua;
+    flex-grow: 1;
+}
+#box2{
+    background-color: pink;
+    height: 200px; */
+    /* align-self: flex-end; */
+    /* flex-shrink: 1; */
+    
+/* } */
+/* #box3{
+    background-color: rgb(76, 76, 197);
+    height: 75px;*/
+/* }
+#box4{
+    background-color: red;
+}
+#box5{
+    background-color: green;*/ 
+    /* align-self: flex-end; */
+/* }  */
+
+
+
+/* 
+.navbar{
+    background-color: rgb(61, 170, 173);
+    display: flex;
+    justify-content: space-evenly; 
+}
+a{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(249, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(64, 86, 174);
+    align-self: flex-end;
+} */
+
+/* 
+div{
+    height: 50px;
+    width: 50px;
+    background-color: violet;
+}
+@media(width:600px){
+    div{
+        background-color: blue;
+    }
+}
+@media(max-width:600px){
+    div{
+        background-color: green;
+    }
+}
+@media( min-width:200px) and (max-width:300){
+    div{
+        background-color: rgb(237, 67, 175);
+    }
+} */
+
+
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+}
+@media(max-width:300px ){
+    div{
+        background-color: darkgray;
+    }
+}
+@media(min-width:300px)and (max-width:400px) {
+    div{
+        background-color: black;
+    }
+}
+@media(min-width:500px) and (max-width:600px){
+    div{
+        background-color: crimson;
+    }
+}

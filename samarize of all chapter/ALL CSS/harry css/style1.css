@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(49, 172, 177); }
+/*
+#first{
+    background-color: plum;
+    color: bisque;
+ }
+ .yellowpink{
+    background-color: chartreuse;
+ } */
+
+
+/* 
+ h1{
+    color: cyan;
+ }
+ div{ background-color: darkolivegreen; color: cyan;}
+ #red{
+    background-color: dimgrey; color: honeydew;
+ }
+ .blue{
+    background-color: blue;
+    color: coral;
+    border: 2px solid greenyellow;
+ } */
+
+
+  /* .red{
+   background-color: red;
+   color: white;
+  }
+  .head{
+   background-color: dimgrey;
+   color: yellow;
+  } */
+
+
+  .red{
+   background-color: rgba(146, 83, 83, 0.65);
+   color: whitesmoke;
+  }
+  .green{
+   background-color: green;
+   color: whitesmoke;
+  }
+  #yellow{
+   background-color: yellow;
+   color: rgb(216, 105, 105);
+  }

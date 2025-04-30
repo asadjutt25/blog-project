@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="profile-section">
+        <label for="profile-img">
+            <img src="ASAD.JPG.JPG" alt="profile picture" id="profileDisplay">
+        </label>
+        <input type="file" id="profile picture" accept="image/*">
+        <div class="info-inputs">
+            <input type="text" id="Student Name" placeholder="Name">
+            <input type="text" id="Father's Name" placeholder=" Fathr's Name">
+            <input type="text" id="Roll No" placeholder="Roll No ">
+            <input type="text" id="university" placeholder="university Name">
+        </div>
+    </div>
+    <table class="marks-table">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Total Marks</th>
+                <th>obtained Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <input type="text " placeholder="subject:1"></td>
+                <td>
+                    <input type="number" value="100" class="Total">
+                </td>
+                <td><input type="number" class="obtained"></td>
+            </tr>
+            <tr>
+                <td> <input type="text " placeholder="subject:2"></td>
+                <td>
+                    <input type="number" value="100" class="Total">
+                </td>
+                <td><input type="number" class="obtained"></td>
+            </tr>
+            <tr>
+                <td> <input type="text " placeholder="subject:3"></td>
+                <td>
+                    <input type="number" value="100" class="Total">
+                </td>
+                <td><input type="number" class="obtained"></td>
+            </tr>
+            <tr>
+                <td> <input type="text " placeholder="subject:4"></td>
+                <td>
+                    <input type="number" value="100" class="Total">
+                </td>
+                <td><input type="number" class="obtained"></td>
+            </tr>
+            <tr>
+                <td> <input type="text " placeholder="subject:5"></td>
+                <td>
+                    <input type="number" value="100" class="Total">
+                </td>
+                <td><input type="number" class="obtained"></td>
+            </tr>
+            <tr>
+                <td> <input type="text " placeholder="subject:6"></td>
+                <td>
+                    <input type="number" value="100" class="Total">
+                </td>
+                <td><input type="number" class="obtained"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="calculateResult">Submit</button>
+
+    <div class="result-output">
+        <p><strong>Total Marks:</strong> <span id="totalMarks">0</span></p>
+        <p><strong>obobtained Marks:</strong> <span id="obtainedMarks">0</span></p>
+        <p><strong>percentage:</strong> <span id="percentage">0%</span></p>
+        <p><strong> Grade:</strong> <span id=" Grade"></span></p>
+        <p><strong> CGPA:</strong> <span id=" CGPA">0</span></p>
+        <p><strong> performance:</strong> <span id=" performance">0</span></p>
+
+      
+   </div>
+   </div>
+   <script src="scrpt.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Resetting default style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f2f7ff;
+    color: #333;
+}
+/* navbar */
+.navbar{
+display:flex;
+justify-content: space-between;
+align-items: center;
+background-color: #1e1e2f;
+padding: 11px 30px;
+}
+.logo{
+    color: #fff;
+    font-size: 26ppx;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover{
+    color: #a90d25;
+}
+/* hero  */
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right,#0c9ca9,#c6fc25);
+    color: white;
+}
+
+.animate-welcome{
+    font-size: 36px;
+    animation: fadeInDown 1s ease-out;
+}
+.animate-store{
+    font-size: 24px;
+    margin-top: 10px;
+    animation: fadeinup 2s ease-out;
+}
+.hero-btn{
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #0f0f10;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+.hero-btn:hover{
+    background-color: #1ac8d8;
+}
+/* Animation  */
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeinup{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* slider  */
+.slider{
+    padding: 40px 20px;
+    text-align: center;
+}
+.slider-container{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    justify-content: center;
+}
+.slider-container img{
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.slider-container img:hover{
+    transform: scale(1.05);
+}
+/* search  */
+.search-section{
+    text-align: center;
+    margin: 40px 0px 20px;
+}
+
+.search-section input{
+    padding: 12px;
+    width: 250px;
+    max-width: 400px;
+    border:1px solid #81d5c0;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 2px 6x rgba(0,0,0,0.1);
+}
+.search-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    max-width: 400px;  
+}
+.search-wrapper input{
+    width: 100px;padding: 12px 40px 12px 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: 0 2px 6x rgba(0,0,0,0.1);
+}
+.search-icon{
+    position: absolute;
+    right : 12px;
+    top: 50px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+   pointer-events: none;
+}
+.clear-icon{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    display: none;
+}
+#suggestionsLists{
+    list-style: none;
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-height: 150px;
+    overflow-y: auto;
+}
+#suggestionsList li{
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#suggestionsList li:hover{
+    background: #e2e2ff;
+}
+/* Madicine Section  */
+.medicine-section{
+    padding: 40px 20px;
+    text-align: center;
+}
+.medicine-section h2{
+font-size: 32px;
+margin-bottom: 30px;
+color: #1e1e2f;
+}
+.medicine-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.medicine-card{
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transfrom 0.3s;
+}
+.medicine-card:hover{
+    transform: translatey(-10px);
+}
+.medicine-card h3{
+    color: #2575fc;
+    margin-bottom:10px ;
+}
+.medicine-card p{
+    color: #555;
+    font-size: 14px;
+    margin-bottom:10px ;
+}
+.medicine-card button{
+    margin-top: 10px;
+    padding: 10px 20px;border: none;
+    border: none;
+    color: white;
+    background-color:#2575fc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.medicine-card button:hover{
+    background-color: #1ac8d8;
+}
+/* footer */
+
+.footer{
+    background-color: #102027;
+    padding: 30px 20px;
+    color:white ;
+    margin-top: 60px; 
+    text-align: center;
+     /* background: linear-gradient(to right,#6a11cb,#2575fc); */
+ 
+}
+.footer-contant{
+    text-align: center;
+}
+.footer-links{
+    margin-top: 10px;
+}
+.footer-links a{
+    color:#90a4ae;
+    margin:0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+.footer-links a:hover{
+    color: #00c3ff;
+}

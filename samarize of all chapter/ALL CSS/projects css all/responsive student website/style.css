@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+}
+.card{
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: o o 10px #ccc;
+}
+.profile-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-section img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.info-inputs input{
+    display: block;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    width: 100px;
+    border: 1px soild #ccc;
+    border-radius: 6px;
+}
+.marks-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.marks-table th,.marks-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.marks-table input{
+    width: 95px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    background: #4c4c4c;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.result-output{
+    margin: 5px 0;
+    font-size: 16px;
+}

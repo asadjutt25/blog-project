@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f3f6;
+}
+header{
+    background: #2874f0;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 20vw;
+    height: 22vh;
+    font-size: 24px;
+    font-weight: bold;
+}
+.search{
+    width: 40%;
+    padding: 8px;
+}
+nav a{
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
