@@ -34,3 +34,30 @@ function mult(a,b){
 const arrowmulti =(a,b)=>{
     console.log(a*b); 
 };
+
+// print 
+const printHello = () => {
+    console.log("hello");
+    
+};
+
+//
+function countvowels(str){
+    let count = 0;
+    for(const char of str){
+        if( char === "a"|| char === "e"|| char === "i"|| char === "o"|| char === "u"){
+            count++;
+        }
+    }
+    console.log(count);
+}
+// prac bi arrow function
+const countvow=(str)=>{
+    let count = 0;
+    for(const char of str){
+        if( char === "a"|| char === "e"|| char === "i"|| char === "o"|| char === "u"){
+            count++;
+        }
+    }
+    console.log(count);
+}
