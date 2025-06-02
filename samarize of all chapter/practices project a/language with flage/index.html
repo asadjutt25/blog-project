@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Language Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Select Language</h2>
+
+<div class="lang-option">
+  <a href="#" onclick="selectLanguage('Hindi')">
+    <img src="https://flagcdn.com/in.svg" alt="India Flag"> Hindi
+  </a>
+  <a href="#" onclick="selectLanguage('English')">
+    <img src="https://flagcdn.com/gb.svg" alt="UK Flag"> English
+  </a>
+  <a href="#" onclick="selectLanguage('USA English')">
+    <img src="https://flagcdn.com/us.svg" alt="USA Flag"> USA English
+  </a>
+</div>
+
+<p id="selected">You selected: <strong>None</strong></p>
+
+<script>
+  function selectLanguage(language) {
+    document.getElementById("selected").innerHTML = `You selected: <strong>${language}</strong>`;
+  }
+</script>
+
+</body>
+</html>
+

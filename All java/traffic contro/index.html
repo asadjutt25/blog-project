@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Widget</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header" >
+      
+      <h3>Our Statice</h3>
+      <a href="#">See All</a>
+    
+    </div>
+    <div class="content">
+      <p><strong>Traffic Time</strong></p>
+      <p class="date">27<span>September 2019</span></p>
+      <canvas id="trafficChart" width="100" height="100"></canvas>
+      
+      <div class="timeline">
+        
+        <span>8:00</span>
+        <span>12:00</span>
+        <span>16:00</span>
+        <span>20:00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="header">
+      <h3>My Storage</h3>
+      <a href="#">See All</a>
+    </div>
+    <div class="content">
+      <p><strong>2.2 GB</strong> used</p>
+      <p>25% used – 3.8GB Free</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 52%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('trafficChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Morning', 'Afternoon', 'Evening', 'Night','Midnight'],
+        datasets: [{
+          data: [25, 30, 35, 10, 12],
+          backgroundColor: ['#f06292', '#7e57c2', 'aqua', ' rgb(224, 169, 18','rgb(204, 62, 62)']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+<canvas id="myChart" style="display: block; box-sizing: border-box; height: 300px; width: 300px;" width="375" height="375"></canvas>
+
+

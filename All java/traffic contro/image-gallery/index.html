@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- lightGallery CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+</head>
+<body>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="architecture">Architecture</button>
+    <button class="filter-btn" data-filter="people">People</button>
+  </div>
+
+  <div id="lightgallery" class="gallery">
+    <a href="https://www.boredpanda.com/blog/wp-content/uploads/2023/09/kejama14_A_hyper-realistic_portrait_of_a_majestic_lion_his_mane_706613bd-60ea-413d-88e5-d10b00d8176f-6512aae024957-png__700.jpg" class="gallery-item nature">
+      <img src="https://shirleytwofeathers.com/The_Blog/waycoolpictures/wp-content/uploads/sites/13/2018/04/maxresdefault-1.jpg" alt="Nature 1">
+      
+    </a>
+    <a href="https://i.natgeofe.com/k/baf4215e-517c-49b4-84f4-8e63cd5e5913/ww-funny-animal-faces-lemur_square.jpg" class="gallery-item architecture">
+      <img src="https://i.natgeofe.com/k/baf4215e-517c-49b4-84f4-8e63cd5e5913/ww-funny-animal-faces-lemur_square.jpg" alt="Architecture 1">
+    </a>
+    <a href="images/people1.jpg" class="gallery-item people">
+      <img src="https://img.freepik.com/free-photo/people-taking-selfie-together-registration-day_23-2149096795.jpg" alt="People 1">
+    </a>
+    <!-- Add more gallery items up to 30 images -->
+  </div>
+
+  <!-- lightGallery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

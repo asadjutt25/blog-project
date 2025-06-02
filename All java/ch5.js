@@ -1,12 +1,11 @@
-function myfunction(){
-    console.log("Welcome to function");
-    console.log(" i created my first function");
-    console.log("Welcome to function");
-    console.log(" i created my first function");
-}
+// function myfunction(){
+//     console.log("Welcome to function");
+//     console.log(" i created my first function");
+//     console.log("Welcome to function");
+//     console.log(" i created my first function");
+// }
 
 myfunction();
-
 function sum(x,y){
     s= x+y;
     console.log("before return");
@@ -61,3 +60,9 @@ const countvow=(str)=>{
     }
     console.log(count);
 }
+
+let arr = [2,3,4,5,6,7];
+arr.forEach(function printval(val){
+    console.log(val);
+    
+});

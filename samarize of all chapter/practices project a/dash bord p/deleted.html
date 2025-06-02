@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .system-log-card {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.system-log-card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.log-header, .log-row {
+  display: grid;
+  grid-template-columns: 50px 70px 150px 120px 200px 100px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.log-header {
+  background: #e0e0e0;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.log-row {
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.log-row img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.log-info strong {
+  color: #000;
+  display: block;
+}
+
+.log-info small {
+  color: #777;
+  font-size: 12px;
+}
+    </style>
+</head>
+<body>
+    <div class="system-log-card">
+  <h2>System Logs</h2>
+
+  <!-- Table Header -->
+  <div class="log-header">
+    <span>ID</span>
+    <span>Avatar</span>
+    <span>Name</span>
+    <span>Nationality</span>
+    <span>Contact/Gmail</span>
+    <span>Gender/Age</span>
+  </div>
+
+  <!-- Row 1 -->
+  <div class="log-row">
+    <span>1</span>
+    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="avatar" />
+    <div class="log-info">
+      <strong>Afshan</strong><br>
+      <small>Owner</small>
+    </div>
+    <div class="log-info">
+      <strong>Pakistan</strong><br>
+      <small>Vehari</small>
+    </div>
+    <div class="log-info">
+      <strong>03057777211</strong><br>
+      <small>asad@gmail.com</small>
+    </div>
+    <div class="log-info">
+      <strong>Female</strong><br>
+      <small>120</small>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="log-row">
+    <span>2</span>
+    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="avatar" />
+    <div class="log-info">
+      <strong>Jhon</strong><br>
+      <small>Owner</small>
+    </div>
+    <div class="log-info">
+      <strong>America</strong><br>
+      <small>Appara</small>
+    </div>
+    <div class="log-info">
+      <strong>994873957</strong><br>
+      <small>jhon@gmail.com</small>
+    </div>
+    <div class="log-info">
+      <strong>Male</strong><br>
+      <small>320</small>
+    </div>
+  </div>
+</div>
+  <!-- Aap chaho to yahan aur bhi log-row add kar sakte ho... -->
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #81ecec, #6c5ce7);
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  user-select: none;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.score-timer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#score {
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+
+#score.hit {
+  color: #00ff00;
+}
+
+#time, #highScore {
+  font-weight: bold;
+}
+
+#startBtn {
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#startBtn:hover:not(:disabled) {
+  background-color: #341f97;
+}
+
+#startBtn:disabled {
+  background-color: #a29bfe;
+  cursor: default;
+}
+
+.mode-select {
+  margin-bottom: 15px;
+}
+
+.mode {
+  font-size: 1rem;
+  padding: 6px 16px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #dfe6e9;
+  color: #2d3436;
+  transition: background-color 0.3s ease;
+}
+
+.mode.active {
+  background-color: #6c5ce7;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.mode:hover:not(.active) {
+  background-color: #b2bec3;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 25px;
+  justify-content: center;
+}
+
+.hole {
+  width: 120px;
+  height: 120px;
+  background: #dfe6e9;
+  border-radius: 50%;
+  box-shadow: inset 0 5px 15px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.hole:hover {
+  box-shadow: inset 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.mole {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 70px;
+  transition: bottom 0.3s ease;
+  user-select: none;
+  will-change: transform;
+}
+
+.hole.up .mole {
+  animation: moleUp 0.3s forwards;
+  bottom: 0;
+}
+
+@keyframes moleUp {
+  0% { bottom: -110px; transform: translateX(-50%) scale(0.8); }
+  50% { transform: translateX(-50%) scale(1.1); }
+  100% { bottom: 0; transform: translateX(-50%) scale(1); }
+}
+
+.mole.hit {
+  animation: moleHit 0.3s forwards;
+}
+
+@keyframes moleHit {
+  0% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.5); opacity: 0.6; }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media(max-width: 450px) {
+  .game {
+    grid-template-columns: repeat(2, 120px);
+    gap: 15px;
+  }
+  .hole {
+    width: 100px;
+    height: 100px;
+  }
+  .mole {
+    font-size: 60px;
+  }
+}

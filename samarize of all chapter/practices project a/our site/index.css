@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+
+}
+.card{
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    border: 3px solid #007bff;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.card-heade h2{
+    font-size: 16px;
+    margin: 0;
+}
+.see-all{
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+.traffic-date{
+    font-size: 28px;
+    color: #007bff;
+    font-weight: bold;
+}
+.date-text{
+    font-size: 14px;
+    color: #999;
+}
+.traffic-date span{
+    font-size: 12px;
+    color: #aaa;
+    font-weight: normal;
+}
+.traffic-chart{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.pie-chart{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: conice-gradient(
+        #ff4d94 0% 20%,
+        #800080 20% 60%,
+        #4b0082 60% 100%,
+        #eee 100%
+    );
+    margin-right: 15px;
+}
+.time-bar{
+    display: flex;
+    margin-top: 15px;
+    gap: 16px;
+    
+}
+.time-labels{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaa;
+}
+.bar{
+    height: 12px;
+    background: #e5e7eb;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+.bar div{
+    height: 100%;
+    background: #1da1f2;
+    width: 25%;
+    border-radius: 10px;
+}
+.bar.part1{
+    width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+
+}
+.bar.part2,
+.bar.part3{
+    width: 20%;
+}
+/* storage card  */
+.storage-amount{
+    font-size:20px;
+font-weight: bold;
+}
+.storage-sub{
+    font-size: 14px;
+    color: #4b4b4b;
+    margin-bottom: 8px;
+}
+.storage-bar{
+    background: #e5e7eb;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.storage-bar-fill{
+    width: 25%;
+    background: #ff4d4d;
+    height: 100%;
+}
+.storage-percent{
+    text-align: right;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+}

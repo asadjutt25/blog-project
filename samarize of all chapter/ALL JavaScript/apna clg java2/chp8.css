@@ -1,0 +1,19 @@
+/* box  */
+/* div{
+    height: 100px;
+    width: 80px;
+    color: cadetblue;
+    background-color: aquamarine;
+    border:  2px groove rgb(84, 64, 64);
+} */
+
+/* mode  */
+
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}

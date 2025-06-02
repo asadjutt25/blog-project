@@ -1,0 +1,39 @@
+
+/* Default Theme Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --button-bg: #e0e0e0;
+  --transition-time: 0.3s;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --button-bg: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color var(--transition-time), color var(--transition-time);
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.theme-toggle {
+  padding: 10px 20px;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: background-color var(--transition-time);
+}

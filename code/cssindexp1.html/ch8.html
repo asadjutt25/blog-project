@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: orangered;
+            color:white;
+            height: 60vh;
+        }
+        .box5{
+            /* border: 2px solid black; */
+margin: 50px 40px 0px 100px;
+            transform: translate(50px, 70px);
+            transform-origin: 0;
+            /* transform: scale(4, 1); */
+            /* transform: skew(20deg,30deg); */
+            transform: rotateX(33deg);
+            transform: rotate(15deg);
+        }
+        img:hover{
+            width: 67px;
+        }
+        img{
+            width: 150px;
+            height: 220px;
+            /* transition-property: width;
+            transition-duration: 0.5ms;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            transition: width 0.3s ease-in-out  , height 4s ease-in ;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+        button{
+            background-color: rgb(80, 83, 20);
+            color: white;
+            border: 2px solid black;
+            border-radius: 31px;
+            width: 90px;
+        }
+        
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus labore culpa!</div> -->
+        <!-- <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga ratione ducimus sunt nesciunt id exercitationem itaque voluptatum labore eligendi. Sint incidunt et a harum, expedita accusantium enim debitis quidem.</div> -->
+        <!-- <div class="box3"><img src="https://unsplash.com/photos/a-blue-plate-topped-with-sliced-tomatoes-and-a-fork-U1w5IDSOVeg" alt="https://unsplash.com/photos/a-blue-plate-topped-with-sliced-tomatoes-and-a-fork-U1w5IDSOVeg"></div>
+        <div class="box4"><img src="https://www.pexels.com/photo/flat-lay-photography-of-vegetable-salad-on-plate-1640777/" alt=""></div> -->
+        <div class="box5">
+            <img id="myImage" src="asad.jpg" alt="">
+        <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width ='150px';
+    myImage.style.height ='220px';
+    btn.addEventListener("click",()=>{
+        if(   myImage.style.width ==='246px'){
+         myImage.style.width ="150px";
+         myImage.style.height ='220px';
+         
+    }
+  else if(   myImage.style.width ==='150px')
+    {
+         myImage.style.width ="246px";
+         myImage.style.height ='420px';
+    }
+
+    
+})
+</script>
+</html>

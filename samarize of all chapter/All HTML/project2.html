@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <U><H1Project Management</H1></U>
+    <form action="submit.php">
+     <style>
+         div {
+           margin-bottom: 5px;
+         }
+       
+         label {
+           font-weight: bold;
+           display: block;
+           margin-bottom: 5px;
+         }
+       
+         input, select {
+           width: 20%;
+           padding: 4px;
+           border: 3px solid #f74a8f;
+           border-radius: 5px;
+           font-size: 16px;
+         }
+       
+         input:focus, select:focus {
+           border-color: #ad2b8b;
+           outline: none;
+           box-shadow: 0 0 5px rgba(221, 51, 79, 0.5);
+         }
+       
+         p {
+           font-weight: bold;
+           margin-bottom: 5px;
+         }
+       
+         input[type="radio"] {
+           width: 20px;
+           margin-right: 1px;
+         }
+       
+         label[for="high"], label[for="averge"], label[for="low"] {
+           font-weight: bolder;
+           margin-right: 10px;
+         }
+       </style>
+       
+ <div>
+     <label for="project name">project name </label>
+     <input  id= "project name" type="text" placeholder=" project name">
+ </div>
+ <div>
+     <label for="assignd to ">assignd to </label>
+     <select name="employ" id="employ" required>
+        <option value="" disabled employe> select employe</option>
+        <option value="employe1"> Asad</option>
+        <option value="employe2"> Kamran</option>
+        <option value="employe3"> Fasial</option>
+        <option value="employe4"> Ramzan</option>
+     </select>
+ </div>
+
+ <div>
+     <label for="email">email </label>
+     <input id="email" type="email" placeholder="enter email">
+ </div>
+ <div>
+    <label for="start date">start date </label>
+    <input type="date" id="start date " required>
+</div>
+ <div>
+     <label for="end date">end date </label>
+     <input id="end date" type="date" required>
+ </div>
+ <div>
+    <label for="Gender"> Gender</label>
+<select id="Gender" required>
+<option value="" disabled selected>select Gender </option>
+    <option value="male"> Male </option>
+    <option value="Femail"> Femail</option>
+<option value="other"> other</option> 
+</select>
+
+</div>
+<div>
+  <label for="woker">select the worker</label>
+  <select name="worker" id="woker">
+    <option value="worker1">select</option>
+    <option value="worker 2">Kamran</option>
+  </select>
+
+</div>
+<div>
+  <label for="start the date">start date</label>
+  <input type="date">
+</div>
+<div>
+  <p>quality</p>
+  <input type="radio" id="name" value="name"> <label for="name">good</label>
+ 
+</div>
+
+<div>
+<p> <b>priority</b></p>
+<input  id="high"type="radio" name="priority"value="high">
+<label for="high">high</label>
+<input  id="averge"type="radio" name="priority"value="averge">
+<label for="averge">averge</label>
+<input  id="low"type="radio" name="priority"value="low">
+<label for="low">low</label>
+</div>
+
+
+
+
+<!-- textarea for comment -->
+ <div>
+    <label for="Description"> Discription</label>
+    <textarea name="Description" id="Description" placeholder="enter Description"></textarea>
+ </div>
+ <label for="cars"></label>
+ <select name="" id="">
+  <optgroup label="Renault"></optgroup>
+  <option value=""></option>
+ </select>
+ 
+    </form>
+</body>
+</html>

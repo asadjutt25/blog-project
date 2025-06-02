@@ -1,0 +1,29 @@
+/* 
+.heading{
+    color: blue;
+    background-color: aqua;
+}
+#heading1{
+    color: rgb(108, 62, 6);
+    background-color: rgb(134, 197, 26);
+}
+body{
+    background-color: pink;
+}
+button{
+    background-color: rgb(183, 122, 48);
+    color: white;
+} */
+
+/* pratices question  */
+
+/* question no 2:  */
+
+.box{
+    height: 60px;
+    width: 50px;
+    background-color: aquamarine;
+    border: 2px double yellowgreen;
+margin: 7px;
+text-align: center;
+}

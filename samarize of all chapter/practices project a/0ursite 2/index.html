@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="index.js"> -->
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- Our Statice Card -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Our Statice</h2>
+        <a href="#">See All</a>
+      </div>
+
+      <div class="section-title">Traffic Time</div>
+
+      <div class="date-row">
+        <span class="date-num" id="date-day">27</span>
+        <span class="date-text" id="date-full">September 2019</span>
+      </div>
+
+      <div class="traffic-block">
+        <div class="pie-chart"></div>
+
+        <div class="traffic-bar-animated">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    
+
+      <div class="time-labels">
+        <span>8:00</span>
+        <span>12:00</span>
+        <span>16:00</span>
+        <span>20:00</span>
+      </div>
+    </div>
+
+    <!-- Divider Lines -->
+    <div class="divider-lines">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- My Storage Card -->
+    <div class="card">
+      <div class="card-header">
+        <h2>My Storage</h2>
+        <a href="#">See All</a>
+      </div>
+
+      <div class="storage-usage">
+        <strong>2.2GB</strong> used
+      </div>
+      <div class="storage-subtext">
+        25% used – 3.8GB Free
+      </div>
+
+      <div class="storage-bar">
+        <div class="storage-fill"></div>
+      </div>
+
+      <div class="storage-percent">25%</div>
+    </div>
+
+  </div>
+<script>
+    function updateDate() {
+    const today = new Date();
+
+    const day = today.getDate();
+    const options = { year: 'numeric', month: 'long' };
+    const fullDate = today.toLocaleDateString('en-US', options);
+
+    document.getElementById('date-day').textContent = day;
+    document.getElementById('date-full').textContent = fullDate;
+  }
+
+  updateDate();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Country Selector with Flag</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+  <!-- JS for Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <style>
+    .dropdown-toggle img {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center mt-5">
+    <h1 style="color: green">
+        GeeksforGeeks
+    </h1>
+    <div class="dropdown mt-3">
+        <center>
+      <button class="btn btn-success dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img id="selectedFlag" src="https://www.icolorpalette.com/download/solidcolorimage/339c5e_solid_color_background_icolorpalette.png" width="20" height="15">
+        <span id="selectedText">Country Flags</span>
+      </button>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item d-flex align-items-center" href="#" onclick="selectCountry('Pakistan', 'https://flagcdn.com/pk.svg')">
+          <img src="https://flagcdn.com/pk.svg" width="20" height="15"> &nbsp; Pakistan
+        </a>
+        <a class="dropdown-item d-flex align-items-center" href="#" onclick="selectCountry('USA', 'https://media.geeksforgeeks.org/wp-content/uploads/20200630132504/uflag.jpg')">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132504/uflag.jpg" width="20" height="15"> &nbsp; USA
+        </a>
+        <a class="dropdown-item d-flex align-items-center" href="#" onclick="selectCountry('England', 'https://media.geeksforgeeks.org/wp-content/uploads/20200630132502/eflag.jpg')">
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132502/eflag.jpg" width="20" height="15"> &nbsp; England
+        </a>
+        <a class="dropdown-item d-flex align-items-center" href="#" onclick="selectCountry('Brazil', 'https://media.geeksforgeeks.org/wp-content/uploads/20200630132500/bflag.jpg')">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630132500/bflag.jpg" width="20" height="15"> &nbsp; Brazil
+          </a>
+        </div>
+      </div>
+    </div>
+  </center>
+    <script>
+      function selectCountry(name, flagUrl) {
+        document.getElementById('selectedText').innerText = name;
+        document.getElementById('selectedFlag').src = flagUrl;
+      }
+    </script>
+  </body>
+  </html>

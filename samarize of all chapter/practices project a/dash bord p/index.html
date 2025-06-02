@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colorful Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+ <div class="server-card">
+  <h3>Server Info</h3>
+  <div class="info-box">
+
+    <div class="info-item red" data-value="25">
+      <img src="https://img.icons8.com/ios/50/server.png" alt="Server">
+      <strong>Server Name</strong>
+      <div class="bar"><div></div></div>
+      <span class="label">Down 25%</span>
+    </div>
+
+    <div class="info-item blue" data-value="10">
+      <img src="https://img.icons8.com/ios/50/cpu.png" alt="CPU">
+      <strong>CPU</strong>
+      <div class="bar"><div></div></div>
+      <span class="label">10%</span>
+    </div>
+
+    <div class="info-item green" data-value="70">
+      <img src="https://img.icons8.com/ios/50/memory-slot.png" alt="RAM">
+      <strong>RAM</strong>
+      <div class="bar"><div></div></div>
+      <span class="label">4TB</span>
+    </div>
+
+    <div class="info-item purple" data-value="85">
+      <img src="https://img.icons8.com/ios/50/hdd.png" alt="HD">
+      <strong>HD</strong>
+      <div class="bar"><div></div></div>
+      <span class="label">800TB</span>
+    </div>
+
+  </div>
+</div>
+
+    <div class="middle-cards">
+      <div class="card yellow">
+        <h3>API Status</h3>
+        <p>21 API</p>
+      </div>
+      <div class="card lightgreen">
+        <h3>Online</h3>
+        <p>1%</p>
+      </div>
+      <div class="card red">
+        <h3>Offline</h3>
+        <p>0%</p>
+      </div>
+      <div class="card green">
+        <h3>OTP Status</h3>
+        <p>ON</p>
+      </div>
+      <div class="card blue">
+        <h3>Options</h3>
+        <p>Status: ON</p>
+      </div>
+    </div>
+
+    <div class="admins-section">
+      <h3>Admins</h3>
+      <div class="admin">
+        <img src="https://via.placeholder.com/60" alt="Owner">
+        <div>
+          <strong>Owner Name</strong><br><small>OWNER</small>
+        </div>
+      </div>
+      <div class="admin">
+        <img src="https://via.placeholder.com/60" alt="Admin">
+        <div>
+          <strong>Admin Name</strong><br><small>ADMIN</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="logs-section">
+      <h3>System Logs</h3>
+      <ul id="logList"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

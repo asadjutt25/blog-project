@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.column {
+			flex-basis: 30%;
+			padding: 10px;
+		}
+		
+		.dp {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin: auto;
+		}
+		
+		.dp img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		
+		.comment-box {
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="column">
+			<textarea class="comment-box" rows="5" cols="30"></textarea>
+			<textarea class="comment-box" rows="5" cols="30"></textarea>
+			<textarea class="comment-box" rows="5" cols="30"></textarea>
+		</div>
+		<div class="column">
+			<div class="dp">
+				<img src="img2.jfif.JPG" alt="Profile Picture">
+			</div>
+			<textarea class="comment-box" rows="5" cols="50"></textarea>
+			<textarea class="comment-box" rows="5" cols="50"></textarea>
+		</div>
+		<div class="column">
+			<textarea class="comment-box" rows="5" cols="30"></textarea>
+			<textarea class="comment-box" rows="5" cols="30"></textarea>
+			<textarea class="comment-box" rows="5" cols="30"></textarea>
+		</div>
+	</div>
+</body>
+</html>

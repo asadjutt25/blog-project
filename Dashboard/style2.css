@@ -1,0 +1,544 @@
+/* Reset some default styles */
+body, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+    
+}
+body{
+  background: #f4f4f4;
+}
+
+/* Main dashboard layout */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Left section - card container */
+.card-container {
+  display: grid;
+  /* grid-template-columns: repeat(minmax(250px, 1fr)); */
+  gap: 15px;
+  width: 55vw;
+  height: 50vh;
+}
+/* Individual card styling */
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+    width: 49vw;
+  height: 20vh;
+  display: flex;
+  border: 1px solid #ccc;
+  overflow: hidden;
+ 
+}
+ /* for parts of cards */
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ccc; /* vertical divider */
+}
+
+/* Remove border from the last section */
+.section:last-child {
+  border-right: none;
+}
+/* for the card 1 parat1  */
+.content {
+  text-align: center;
+}
+
+.content img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.storage {
+  color: green;
+  font-size: 14px;
+}
+
+ /* for the second part */
+
+ .progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 5px auto 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4789da;
+  border-radius: 5px;
+}
+
+.awad{
+ background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 23vw;
+  height: 23vh;
+    margin: 0px 0px 0px 0px;
+}
+
+.custom-card {
+  width: 23vw;
+  height: 23vh;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.part {
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.part1 {
+  width: 40%;
+  background-color: white; /* optional for visibility */
+  /* border-right: 1px solid #ddd; optional divider */
+   border-right: 2px solid rgb(224, 223, 222); /* vertical line between parts */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.part2 {
+  width: 60%;
+  position: relative;
+  padding: 10px;
+}
+.back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.heading {
+  margin-top: 20px;
+font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+}
+.subheading {
+  margin-top: 10px;
+  font-size: 1em;
+  color: black;
+}
+
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: black;
+}
+
+.number {
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 3px;
+  color: black;
+}
+
+.subtitle {
+  margin: 17px;
+  font-size: 16px;
+  color: black;
+}
+
+.part2 {
+  width: 60%;
+  background-color: white; /* optional */
+}
+
+
+.wad{
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 23vw;
+  height: 23vh;
+  margin: -210px 0px 00px 384px;
+  border: 1px solid #ccc;
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+.part10 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            text-align: center;
+            font-size: 20px;
+             padding: 10px;
+            flex-direction: column;
+        }
+
+        .divider1 {
+            border-left: 2px solid #d7d3d3;
+            height: 100%;
+        }
+
+        .part11 {
+            background-color: white;
+        }
+
+        .part22 {
+            background-color: white;
+        }
+
+        .lock-image {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .password-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .heading1 {
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .status1 {
+            font-size: 14px;
+            color: green;
+        }
+          .icon-group {
+            margin: 0px 0px 0px 0px;
+      display: flex;
+      gap: 23px;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+/* .info-left,
+.info-right {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.info-divider {
+  width: 1px;
+  background-color: #ccc;
+  height: 100%;
+} */
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+}
+/* Right section */
+.right-section {
+  width: 26vw;
+}
+/* .admin-card {
+  margin: 0px 0px 0px -97px;
+  width: 22vw;
+  height: 53vh;
+  background: #171717;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.admin-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.admin-grid {
+  margin: 50px 0px 0px 0px;
+  width: 21vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+}
+
+.top-admins {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+.bottom-admins {
+  display: flex;
+  justify-content: space-between;
+}
+.admin-profile {
+  background: #f4f4f4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+ 
+}
+
+.top-admins .admin-profile {
+  width: 45%;
+  height: 130px;
+}
+
+.bottom-admins .admin-profile {
+  width: 32%;
+  height: 110px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+} */
+    
+.main-card {
+   margin: 5px 0px 0px -97px;
+  width: 22vw;
+  height: 50vh;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  margin: 0 0 8px 5px;
+  font-size: 16px;
+  color: #333;
+}
+.top-row, .bottom-row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.admin-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.large-card {
+  width: 40%;
+  margin: 20px 10px 0px 0px;
+}
+
+.small-card {
+  width: 31%;
+  margin: 30px 0px 0px 0px;
+}
+
+.card-header {
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  margin-top: -20px;
+  border: 2px solid white;
+}
+.avatarr {
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  margin-top: -0px;
+  border: 2px solid white;
+}
+
+.role {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #888;
+}
+
+.name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+
+ /* for system logs */
+.car{
+   margin: 0px 0px 0px 0px;
+   width: 22vw;
+    height: 49vh;
+    margin: 20px;
+    border-radius: 8px;
+     margin: 0px 0px 0px -15px;
+  width: 22vw;
+  height: 53vh;
+  background: #171717;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+
+.car-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.car-header h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.logss-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9px;
+}
+
+.logss-table th, .logss-table td {
+    padding: 4px 2px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.logss-table p{
+font-size: 8px;
+color: #837b7b;
+}
+.avatar {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+}
+.avatar1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+}
+.statusq {
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.statusq.accepted {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.statusq.canceled {
+    background-color: #F44336;
+    color: white;
+}
+
+.pragress {
+    width: 100%;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.pragress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.bbtn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.bbtn.hire {
+    background-color: #4CAF50;
+    color: white;
+    width: 32px;
+    height: 20px;
+    font-size: 9px;
+}
+
+.bbtn.fire {
+    background-color: #F44336;
+    color: white;
+     width: 32px;
+    height: 20px;
+    font-size: 9px;
+}
+
+.bbtn:hover {
+    opacity: 0.8;
+}
+
+/* 
+card ma background or picture lagna k leeya  */
+

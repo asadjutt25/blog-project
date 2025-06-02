@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary-color:#12ac8e;
+    --primary-color:#0d846c;
+    --primary-color:#e9f7f7;
+    --primary-color:#fb923c;
+    --text-dark:#333333;
+    --text-light:#767268;
+    --white:#ffffff;
+    --max-width:1200px;
+    
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    .section__container {
+        max-width: var(--max-width);
+        margin: auto;
+        padding: 5rem 1rem;
+        
+    }
+.section__header{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-dark);
+}
+.btn{
+    padding: 75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    white-space: nowram;
+    color: var(--white);
+    background-color: var(--seconday-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+body
+{
+          font-family:'Poopins',sans-serif;
+}
+header{
+    background-image: linear-gradient( to right,
+    rgba(18,172,142.9),
+    rgba(18,172,142.7),
+),
+url("assets/header.jpg");
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+   
+}
+.nav__container{
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.nav__logo{
+font-size: 1.5rem;
+font-weight: 600;
+color:var(--white)
+}
+.nav__logo span{
+    color: var(--seconday-color);
+}
+.nav__links{
+
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+
+}
+.link a{
+    padding: .5rem;
+    color:var(--primary-color-light);
+}
+.link a:hover{
+    color:var(--white)
+}

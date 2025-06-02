@@ -1,0 +1,210 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f6f8;
+  padding: 30px;
+}
+
+.main-container {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #e15252;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background: #f6f4f4;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-header a {
+  font-size: 14px;
+  color: #6b46c1;
+  text-decoration: none;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+.date-row {
+  display: flex;
+  align-items: baseline;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.date-num {
+  font-size: 28px;
+  color: #1da1f2;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.date-text {
+  font-size: 14px;
+  color: #888;
+}
+
+.traffic-block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pie-chart {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #ff4da6 0% 20%,
+    #aa00ff 20% 50%,
+    #4b0082 50% 75%,
+    #cccccc 75% 100%
+  );
+  margin-right: 15px;
+}
+
+.traffic-bar-animated {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+  flex: 1;
+  position: relative;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #1da1f2, #00c6ff);
+  height: 100%;
+  width: 30%;
+  /* animation: fillBar 10s linear forwards; */
+  animation: moveBar 2s linear infinite ;
+  border-radius: 10px;
+  position: absolute;
+  /* left: -30%; */
+  position: relative;
+  animation-iteration-count: infinite;
+  border-radius: 10px;
+}
+
+@keyframes moveBar {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.time-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+  padding: 0 2px;
+}
+
+.divider-lines {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0;
+}
+
+.divider-lines .line {
+  height: 2px;
+  background-color: #1da1f2;
+  width: 40%;
+  border-radius: 2px;
+}
+
+.storage-usage {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.storage-subtext {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.storage-bar {
+  background: #eee;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.storage-fill {
+  width: 25%;
+  background: #ff4d4d;
+  height: 100%;
+}
+
+.storage-percent {
+  text-align: right;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+}
+@media (max-width: 500px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .date-num {
+    font-size: 24px;
+  }
+
+  .pie-chart {
+    width: 60px;
+    height: 60px;
+  }
+
+  .progress-fill {
+    animation-duration: 5s; /* Mobile pe fast feel */
+  }
+
+  .time-labels span {
+    font-size: 10px;
+  }
+}
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.progress-fill {
+  animation: fillBar 10s linear forwards;
+}

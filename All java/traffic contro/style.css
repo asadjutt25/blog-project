@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(250, 52, 52, 0.1);
+    width: 300px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .header a {
+    color: #007bff;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .date {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .date span {
+    /* color: rgb(154, 26, 94); */
+    color: gray;
+    font-size: 12px;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background: #eee;
+  border-radius: 10px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress {
+  background: #f06292;
+  height: 10px;
+  border-radius: 10px;
+}
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+   /* canvas {
+      display: block;
+      margin: 20px auto;
+      background: #fff;
+    } */
+
+    .fas, .fa-solid {
+    font-weight: 900;
+}

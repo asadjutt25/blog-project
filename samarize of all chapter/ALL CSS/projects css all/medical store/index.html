@@ -125,6 +125,33 @@
         </div>
     </div>
 </section>
+<!-- Purchase Medicine Form -->
+<section class="purchase-section">
+    <h2>Buy Medicine</h2>
+    <form action="purchase.php" method="POST" class="purchase-form">
+      <input type="text" name="medicine_name" placeholder="Enter Medicine Name" required />
+      <input type="number" name="quantity" placeholder="Enter Quantity" required />
+      <input type="text" name="customer_name" placeholder="Enter Your Name" required />
+      <button type="submit">Purchase</button>
+    </form>
+  </section>
+<!-- Login & Register Section -->
+<section class="auth-section">
+    <h2>Login to Your Account</h2>
+    <form action="login.php" method="POST" class="auth-form">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  
+    <h2>Register New Account</h2>
+    <form action="register.php" method="POST" class="auth-form">
+      <input type="text" name="username" placeholder="Choose Username" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="password" name="password" placeholder="Choose Password" required />
+      <button type="submit">Register</button>
+    </form>
+  </section>
 <!-- footer  -->
  <footer>
  <div class="footer">
